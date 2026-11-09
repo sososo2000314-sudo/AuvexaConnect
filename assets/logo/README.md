@@ -1,1 +1,0 @@
-AuvexaConnectの白いAロゴをここに配置します。
