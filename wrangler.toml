@@ -1,0 +1,18 @@
+name = "auvexaconnect"
+main = "worker.js"
+compatibility_date = "2026-11-11"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "auvexaconnect-db"
+database_id = "944eabf6-75b9-4121-8ed4-5c5323cf390f"
+
+# R2 is intentionally disabled until storage billing/quota is confirmed.
+# [[r2_buckets]]
+# binding = "MEDIA_BUCKET"
+# bucket_name = "auvexaconnect-media"
