@@ -1,0 +1,11 @@
+{
+  "name": "AuvexaConnect",
+  "short_name": "Auvexa",
+  "description": "AuvexaConnect community",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080a10",
+  "theme_color": "#080a10",
+  "lang": "ja",
+  "icons": []
+}

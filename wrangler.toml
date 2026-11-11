@@ -1,0 +1,28 @@
+name = "auvexaconnect"
+main = "worker.js"
+compatibility_date = "2026-11-11"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "auvexaconnect-db"
+database_id = "944eabf6-75b9-4121-8ed4-5c5323cf390f"
+
+# R2は請求設定を確認してから有効化すること。
+# 有効化する場合はCloudflareでR2バケットを作成し、下記をコメント解除する。
+# [[r2_buckets]]
+# binding = "MEDIA_BUCKET"
+# bucket_name = "auvexaconnect-media"
+
+[vars]
+APP_NAME = "AuvexaConnect"
+APP_VERSION = "1.0.0"
+DEFAULT_LANGUAGE = "ja"
+MAX_UPLOAD_BYTES = "104857600"
+STORAGE_WARNING_BYTES = "8000000000"
+STORAGE_RESTRICT_BYTES = "9000000000"
+STORAGE_LIMIT_BYTES = "10000000000"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
