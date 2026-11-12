@@ -1,0 +1,17 @@
+name = "japan-connect"
+main = "worker.js"
+compatibility_date = "2026-10-20"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "japan-connect-db"
+database_id = "944eabf6-75b9-4121-8ed4-5c5323cf390f"
+
+[vars]
+APP_NAME = "AuvexaConnect"
+APP_ORIGIN = "https://YOUR-WORKER-DOMAIN"
