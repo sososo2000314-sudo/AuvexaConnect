@@ -1,0 +1,17 @@
+name = "auvexaconnect-beta"
+main = "worker.js"
+compatibility_date = "2026-11-13"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "auvexaconnect-beta-db"
+database_id = "ここにお試し版専用D1のDatabase IDを入力"
+
+[[r2_buckets]]
+binding = "VIDEOS"
+bucket_name = "auvexaconnect-beta-videos"
