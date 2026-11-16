@@ -1,9 +1,0 @@
-name = "auvexaconnect-api"
-main = "src/index.ts"
-compatibility_date = "2026-11-15"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "auvexaconnect-db"
-database_id = "944eabf6-75b9-4121-8ed4-5c5323cf390f"
-# 本番DBのスキーマ確認とバックアップが済むまでマイグレーションは実行しないこと。
